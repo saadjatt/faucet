@@ -1,0 +1,166 @@
+{
+  "contractName": "Faucet",
+  "abi": [
+    {
+      "stateMutability": "payable",
+      "type": "receive",
+      "payable": true
+    },
+    {
+      "inputs": [],
+      "name": "addFunds",
+      "outputs": [],
+      "stateMutability": "payable",
+      "type": "function",
+      "payable": true
+    }
+  ],
+  "metadata": "{\"compiler\":{\"version\":\"0.8.14+commit.80d49f37\"},\"language\":\"Solidity\",\"output\":{\"abi\":[{\"inputs\":[],\"name\":\"addFunds\",\"outputs\":[],\"stateMutability\":\"payable\",\"type\":\"function\"},{\"stateMutability\":\"payable\",\"type\":\"receive\"}],\"devdoc\":{\"kind\":\"dev\",\"methods\":{},\"version\":1},\"userdoc\":{\"kind\":\"user\",\"methods\":{},\"version\":1}},\"settings\":{\"compilationTarget\":{\"project:/contracts/FaucetContract.sol\":\"Faucet\"},\"evmVersion\":\"london\",\"libraries\":{},\"metadata\":{\"bytecodeHash\":\"ipfs\"},\"optimizer\":{\"enabled\":false,\"runs\":200},\"remappings\":[]},\"sources\":{\"project:/contracts/FaucetContract.sol\":{\"keccak256\":\"0x5b43a661a9e4e28f32846e14ff0df35d7662ce1ef60f6918c8f8d3c1342f1fdb\",\"license\":\"MIT\",\"urls\":[\"bzz-raw://bedad9216f582799d3c7a51b083737dd38fe9f5fd0a6223201c0352c20737e6f\",\"dweb:/ipfs/QmQEM2NSt4oLpX7jCzKfBD8AQrafaibMReFzfJ6ALgxtZf\"]}},\"version\":1}",
+  "bytecode": "0x6080604052348015600f57600080fd5b50606a80601d6000396000f3fe608060405260043610601f5760003560e01c8063a26759cb14602a576025565b36602557005b600080fd5b60306032565b005b56fea2646970667358221220e9fe909e6cf05fe54b0bc0577209c76cad371ade96ecf33d469a8c5148caa09464736f6c634300080e0033",
+  "deployedBytecode": "0x608060405260043610601f5760003560e01c8063a26759cb14602a576025565b36602557005b600080fd5b60306032565b005b56fea2646970667358221220e9fe909e6cf05fe54b0bc0577209c76cad371ade96ecf33d469a8c5148caa09464736f6c634300080e0033",
+  "immutableReferences": {},
+  "generatedSources": [],
+  "deployedGeneratedSources": [],
+  "sourceMap": "66:239:0:-:0;;;;;;;;;;;;;;;;;;;",
+  "deployedSourceMap": "66:239:0:-:0;;;;;;;;;;;;;;;;;;;;;;;;;;;;265:38;;;:::i;:::-;;;:::o",
+  "source": "// SPDX-License-Identifier: MIT\npragma solidity >=0.4.22 <0.9.0;\n\ncontract Faucet{\n    //Storage Variables\n    // uint public funds = 1000; //positive values only\n    // int public counter = -10;\n    // int32 public test =123;\n    receive() external payable{}\n\n    function addFunds() external payable{}\n}",
+  "sourcePath": "/home/saad/projects/others/blockchain/faucet/contracts/FaucetContract.sol",
+  "ast": {
+    "absolutePath": "project:/contracts/FaucetContract.sol",
+    "exportedSymbols": {
+      "Faucet": [
+        10
+      ]
+    },
+    "id": 11,
+    "license": "MIT",
+    "nodeType": "SourceUnit",
+    "nodes": [
+      {
+        "id": 1,
+        "literals": [
+          "solidity",
+          ">=",
+          "0.4",
+          ".22",
+          "<",
+          "0.9",
+          ".0"
+        ],
+        "nodeType": "PragmaDirective",
+        "src": "32:32:0"
+      },
+      {
+        "abstract": false,
+        "baseContracts": [],
+        "canonicalName": "Faucet",
+        "contractDependencies": [],
+        "contractKind": "contract",
+        "fullyImplemented": true,
+        "id": 10,
+        "linearizedBaseContracts": [
+          10
+        ],
+        "name": "Faucet",
+        "nameLocation": "75:6:0",
+        "nodeType": "ContractDefinition",
+        "nodes": [
+          {
+            "body": {
+              "id": 4,
+              "nodeType": "Block",
+              "src": "257:2:0",
+              "statements": []
+            },
+            "id": 5,
+            "implemented": true,
+            "kind": "receive",
+            "modifiers": [],
+            "name": "",
+            "nameLocation": "-1:-1:-1",
+            "nodeType": "FunctionDefinition",
+            "parameters": {
+              "id": 2,
+              "nodeType": "ParameterList",
+              "parameters": [],
+              "src": "238:2:0"
+            },
+            "returnParameters": {
+              "id": 3,
+              "nodeType": "ParameterList",
+              "parameters": [],
+              "src": "257:0:0"
+            },
+            "scope": 10,
+            "src": "231:28:0",
+            "stateMutability": "payable",
+            "virtual": false,
+            "visibility": "external"
+          },
+          {
+            "body": {
+              "id": 8,
+              "nodeType": "Block",
+              "src": "301:2:0",
+              "statements": []
+            },
+            "functionSelector": "a26759cb",
+            "id": 9,
+            "implemented": true,
+            "kind": "function",
+            "modifiers": [],
+            "name": "addFunds",
+            "nameLocation": "274:8:0",
+            "nodeType": "FunctionDefinition",
+            "parameters": {
+              "id": 6,
+              "nodeType": "ParameterList",
+              "parameters": [],
+              "src": "282:2:0"
+            },
+            "returnParameters": {
+              "id": 7,
+              "nodeType": "ParameterList",
+              "parameters": [],
+              "src": "301:0:0"
+            },
+            "scope": 10,
+            "src": "265:38:0",
+            "stateMutability": "payable",
+            "virtual": false,
+            "visibility": "external"
+          }
+        ],
+        "scope": 11,
+        "src": "66:239:0",
+        "usedErrors": []
+      }
+    ],
+    "src": "32:273:0"
+  },
+  "compiler": {
+    "name": "solc",
+    "version": "0.8.14+commit.80d49f37.Emscripten.clang"
+  },
+  "networks": {
+    "5777": {
+      "events": {},
+      "links": {},
+      "address": "0x1D7811b4Fff9831ECD48768bCfc258C211557EC6",
+      "transactionHash": "0x6b1ee8a0cfd01780b9915aa271d8c5bb6ac139e522644ed7b16835e1201353f2"
+    }
+  },
+  "schemaVersion": "3.4.7",
+  "updatedAt": "2022-06-01T10:56:54.437Z",
+  "networkType": "ethereum",
+  "devdoc": {
+    "kind": "dev",
+    "methods": {},
+    "version": 1
+  },
+  "userdoc": {
+    "kind": "user",
+    "methods": {},
+    "version": 1
+  }
+}
